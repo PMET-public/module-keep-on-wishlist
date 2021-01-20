@@ -1,0 +1,16 @@
+{
+    "name": "magentoese/module-keep-on-wishlist",
+    "description": "This module adds an admin configuration option to allow items that are added to a whish list to remain on that list after they are added to the cart.",
+    "type": "magento2-module",
+    "require": {
+        "magento/module-wishlist":"*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MagentoEse\\KeepInWishlist\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

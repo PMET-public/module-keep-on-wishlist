@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="wishlist" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<tab>customer</tab>
+			<resource>MagentoEse_KeepInWishlist::config_magentoese_keepinwishlist</resource>
+			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<field id="keep_items_on_wishlists" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Keep Items On Wish Lists</label>
+					<comment>Items are kept on a wish list after they are added to cart</comment>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
